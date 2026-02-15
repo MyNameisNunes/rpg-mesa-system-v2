@@ -1,0 +1,183 @@
+.session-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.session-list-box {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: #667eea;
+  font-size: 2em;
+}
+
+.user-info {
+  color: #666;
+  font-size: 1.1em;
+}
+
+.btn-logout {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-create-session {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.create-session-form {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.create-session-form h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.systems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.system-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background: white;
+  border: 3px solid #e0e0e0;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+.system-card:hover {
+  border-color: #667eea;
+  transform: translateY(-3px);
+}
+
+.system-card.selected {
+  border-color: #667eea;
+  background: #f0f4ff;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.system-icon {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.system-name {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.system-category {
+  font-size: 0.75em;
+  color: #999;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-cancel {
+  flex: 1;
+  background: #6c757d;
+  color: white;
+}
+
+.btn-confirm {
+  flex: 1;
+  background: #28a745;
+  color: white;
+}
+
+.sessions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.no-sessions {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+}
+
+.no-sessions p {
+  margin: 10px 0;
+}
+
+.session-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.session-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.session-icon {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.session-card h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.session-system {
+  color: #667eea;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.session-players {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.btn-join {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  width: 100%;
+}
